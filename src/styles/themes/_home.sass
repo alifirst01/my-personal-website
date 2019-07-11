@@ -1,0 +1,92 @@
+.home
+  padding-top: 5%
+  padding-left: 5%
+  text-align: left
+
+  h1
+    font-family: "Courier New"
+    margin: 0
+    color: rgb(0, 165, 90)
+    font-size: 50px
+
+  h3
+    font-family: "Calibri Light"
+    color: rgb(98, 98, 98)
+    font-size: 30px
+    margin: 1% 0
+
+#explore-button
+  margin-left: 5%
+  margin-top: 1%
+  color: rgb(0, 165, 90)
+  font-weight: bold
+  border: 1px solid rgb(0, 165, 90)
+  border-radius: 8px
+  text-transform: capitalize
+
+  &:hover
+    background-color: rgba(0, 165, 90, 0.09)
+
+
+#arrowAnim
+  width: 2.2vw
+  height: 5vh
+  display: flex
+  justify-content: center
+  align-items: center
+
+.arrow
+  width: 0.5vw
+  height: 0.5vw
+  border: 0.2vw solid
+  border-color: rgb(0, 165, 90) transparent transparent rgb(0, 165, 90)
+  transform: rotate(135deg)
+
+.arrowSliding
+  position: absolute
+  margin-left: 3%
+  -webkit-animation: slide 2s linear infinite
+  animation: slide 5s linear infinite
+
+.delay1
+  -webkit-animation-delay: 1s
+  animation-delay: 1s
+
+.delay2
+  -webkit-animation-delay: 2s
+  animation-delay: 2s
+
+@-webkit-keyframes slide
+  0%
+    opacity: 0
+    transform: translateX(-2vw)
+
+  20%
+    opacity: 1
+    transform: translateX(-1vw)
+
+  80%
+    opacity: 1
+    transform: translateX(1vw)
+
+  100%
+    opacity: 0
+    transform: translateX(1vw)
+
+@keyframes slide
+  0%
+    opacity: 0
+    transform: translateX(-2vw)
+
+  20%
+    opacity: 1
+    transform: translateX(-1vw)
+
+  80%
+    opacity: 1
+    transform: translateX(1vw)
+
+  100%
+    opacity: 0
+    transform: translateX(2vw)
+
