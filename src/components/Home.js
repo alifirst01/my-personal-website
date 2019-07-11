@@ -24,13 +24,13 @@ class Home extends Component{
                         <span>
                             <div id="arrowAnim">
                                 <div className="arrowSliding">
-                                    <div className="arrow"></div>
+                                    <div className="arrow"> </div>
                                 </div>
                                 <div className="arrowSliding delay1">
-                                    <div className="arrow"></div>
+                                    <div className="arrow"> </div>
                                 </div>
                                 <div className="arrowSliding delay2">
-                                    <div className="arrow"></div>
+                                    <div className="arrow"> </div>
                                 </div>
                             </div>
                         </span>
