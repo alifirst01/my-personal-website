@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../styles/themes/_about.sass";
-import photo from "assets/images/profile-photo/photo.jpg";
+import Photo from "../assets/images/profile-photo/photo.jpg";
 
 class Home extends Component{
     constructor(props, context) {
@@ -48,7 +48,7 @@ class Home extends Component{
 
                     </div>
                     <div className="profile-photo">
-                        <img src={photo} alt="This is the profile photo"/>
+                        <img src={Photo} alt="This is the profile photo"/>
                     </div>
 
                 </div>

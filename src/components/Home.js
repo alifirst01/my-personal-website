@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "styles/themes/_home.sass"
+import "../styles/themes/_home.sass"
 import Button from '@material-ui/core/Button';
 
 class Home extends Component{
