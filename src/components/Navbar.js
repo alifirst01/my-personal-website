@@ -8,6 +8,25 @@ class Navbar extends Component{
         this.state = {};
     }
 
+    componentDidMount = () => {
+        window.addEventListener('scroll', this.handleScroll);
+    };
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    };
+
+    handleScroll = () => {
+        var scroll = window.scrollY;
+        if(scroll > 0)
+            document.getElementsByClassName("navbar")[0].classList.add("active");
+        else {
+            console.log(document.getElementsByClassName("navbar")[0].classList);
+            document.getElementsByClassName("navbar")[0].classList.remove("active");
+            console.log(document.getElementsByClassName("navbar")[0].classList);
+        }
+    };
+
     render() {
         return(
             <div className="navbar">
