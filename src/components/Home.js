@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../styles/themes/_home.sass"
 import Button from '@material-ui/core/Button';
+import Fade from 'react-reveal/Fade';
 
 class Home extends Component{
     constructor(props, context) {
@@ -11,33 +12,37 @@ class Home extends Component{
     render() {
         return(
             <div className="home">
-                <p>Hi, I am</p>
-                <h1>Ali Asgher</h1>
-                <h3>Software Developer</h3>
-                <p style={{width: "40%", paddingLeft: "5%"}}>specializes in building quality web applications with highly maintainable and testable code</p>
+                <Fade left cascade>
+                    <p>Hi, I am</p>
+                    <h1>Ali Asgher</h1>
+                    <h3>Software Developer</h3>
+                    <p style={{width: "40%", paddingLeft: "5%"}}>specializes in building quality web applications with highly maintainable and testable code</p>
 
-                <div>
-                    <Button id="explore-button" onClick={this.props.updateContent} variant="outlined">
-                        <span>
-                            Explore more
-                        </span>
-                        <span>
-                            <div id="arrowAnim">
-                                <div className="arrowSliding">
-                                    <div className="arrow"> </div>
+                    <div>
+                        <Button id="explore-button" onClick={this.props.updateContent} variant="outlined">
+                            <span>
+                                Explore more
+                            </span>
+                            <span>
+                                <div id="arrowAnim">
+                                    <div className="arrowSliding">
+                                        <div className="arrow"> </div>
+                                    </div>
+                                    <div className="arrowSliding delay1">
+                                        <div className="arrow"> </div>
+                                    </div>
+                                    <div className="arrowSliding delay2">
+                                        <div className="arrow"> </div>
+                                    </div>
+                                    <div className="arrowSliding delay3">
+                                        <div className="arrow"> </div>
+                                    </div>
                                 </div>
-                                <div className="arrowSliding delay1">
-                                    <div className="arrow"> </div>
-                                </div>
-                                <div className="arrowSliding delay2">
-                                    <div className="arrow"> </div>
-                                </div>
-                            </div>
-                        </span>
-                    </Button>
+                            </span>
+                        </Button>
 
-                </div>
-
+                    </div>
+                </Fade>
             </div>
         )
     }
