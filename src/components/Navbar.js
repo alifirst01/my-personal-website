@@ -19,17 +19,17 @@ class Navbar extends Component{
     handleScroll = () => {
         var scroll = window.scrollY;
         if(scroll > 0)
-            document.getElementsByClassName("navbar")[0].classList.add("active");
+            document.getElementsByClassName("custom-navbar")[0].classList.add("active");
         else {
-            console.log(document.getElementsByClassName("navbar")[0].classList);
-            document.getElementsByClassName("navbar")[0].classList.remove("active");
-            console.log(document.getElementsByClassName("navbar")[0].classList);
+            console.log(document.getElementsByClassName("custom-navbar")[0].classList);
+            document.getElementsByClassName("custom-navbar")[0].classList.remove("active");
+            console.log(document.getElementsByClassName("custom-navbar")[0].classList);
         }
     };
 
     render() {
         return(
-            <div className="navbar">
+            <div className="custom-navbar">
                 <ul className="navlist">
                     <li className="link"><a href="">About</a></li>
                     <li className="link"><a href="">Projects</a></li>
