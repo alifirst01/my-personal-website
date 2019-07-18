@@ -3,14 +3,14 @@ import './styles/themes/_app.sass';
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import About from "./components/About";
+import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 
 class App extends Component {
   constructor(){
     super();
     this.state = {
-        home: true,
+        home: false,
     };
   }
 
@@ -31,7 +31,7 @@ class App extends Component {
                 ) : (
                     [
                         <About />,
-                        <Projects />
+                        <Projects />,
                     ]
                 )}
             </div>

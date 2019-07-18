@@ -3,6 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
+    node: {
+        fs: "empty"
+    },
+    // target: "node",
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist')
@@ -51,5 +55,5 @@ module.exports = {
     ],
     devServer: {
         contentBase: path.resolve(__dirname, "dist")
-    }
+    },
 };

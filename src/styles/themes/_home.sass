@@ -1,7 +1,8 @@
 .home
-  padding-top: 5%
+  padding-top: 4%
   padding-left: 5%
   text-align: left
+  //background-image: url("../../assets/images/profile-photo/photo.jpg")
 
   h1
     font-family: "Courier New"
@@ -29,7 +30,7 @@
 
 
 #arrowAnim
-  width: 2.2vw
+  width: 1.5vw
   height: 5vh
   display: flex
   justify-content: center
@@ -44,49 +45,19 @@
 
 .arrowSliding
   position: absolute
-  margin-left: 3%
+  margin-left: 5%
   -webkit-animation: slide 2s linear infinite
-  animation: slide 5s linear infinite
+  animation: slide 3s linear infinite
 
 .delay1
-  -webkit-animation-delay: 1s
-  animation-delay: 1s
+  -webkit-animation-delay: 0.5s
+  animation-delay: 0.5s
 
 .delay2
   -webkit-animation-delay: 2s
-  animation-delay: 2s
+  animation-delay: 0.5s
 
-@-webkit-keyframes slide
-  0%
-    opacity: 0
-    transform: translateX(-2vw)
-
-  20%
-    opacity: 1
-    transform: translateX(-1vw)
-
-  80%
-    opacity: 1
-    transform: translateX(1vw)
-
-  100%
-    opacity: 0
-    transform: translateX(1vw)
-
-@keyframes slide
-  0%
-    opacity: 0
-    transform: translateX(-2vw)
-
-  20%
-    opacity: 1
-    transform: translateX(-1vw)
-
-  80%
-    opacity: 1
-    transform: translateX(1vw)
-
-  100%
-    opacity: 0
-    transform: translateX(2vw)
+.delay3
+  -webkit-animation-delay: 2s
+  animation-delay: 1s
 
