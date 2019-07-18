@@ -1,0 +1,12 @@
+{
+  "title": "Developer Intern",
+  "company": "Technology for People Initiative (TPI)",
+  "url": "http://www.tpilums.org/",
+  "location": "Lahore, Pakistan",
+  "currently-working": false,
+  "start-date": "Jun 2016",
+  "end-date": "Aug 2018",
+  "job-duration": "3 mos",
+  "description": ["Implemented a web app featuring a multistep bootstrap form for village households’ data collection.",
+                  "Built a web platform using Java Spring MVC and integrated it into larger NewsReader system for \nanalyzing large number of news articles from different sources."]
+}
