@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
-import Employment from "./components/Employment";
+import Employment from "./components/Employment/Employment";
 
 class App extends Component {
   constructor(){
