@@ -1,0 +1,18 @@
+{
+  "title": "Graduate Teaching Assistant",
+  "company": "University of Iowa",
+  "location": "Iowa City, Iowa",
+  "url": "https://uiowa.edu/",
+  "logo": "uiowa.png",
+  "current": false,
+  "startDate": "Aug 2018",
+  "endDate": "May 2019",
+  "jobDuration": "10 mos",
+  "description": {
+    "Courses: Algorithms, Intro to Informatics":
+      [
+        "Responsible for designing and grading assignments and exams.",
+        "Provided graduate and undergrad students with one-on-one tutoring and regular assistance."
+      ]
+  }
+}
