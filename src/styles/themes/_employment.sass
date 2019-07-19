@@ -1,0 +1,73 @@
+.employment
+    padding-left: 1%
+    text-align: left
+    height: 82vh
+
+    .employment-content
+        overflow: hidden
+        transition: display 0.5s ease
+
+        .employment-thumbnails
+            ul
+                margin-top: 5%
+                margin-left: 5%
+                list-style: none
+                border-radius: 10px
+            li
+                border-left: 6px solid rgb(0, 187, 86)
+                //border-top-left-radius: 8px
+                //border-bottom-left-radius: 8px
+                //border-top-right-radius: 5px
+                //border-bottom-right-radius: 5px
+                padding-top: 2%
+                padding-bottom: 0.5%
+                padding-left: 2%
+                cursor: pointer
+                transition: color 0.2s ease, background-color 1s ease
+                &:hover
+                    background-color: rgba(0, 187, 86, 0.6)
+                    color: white
+
+            .activeEmp
+                background-color: rgba(0, 187, 86, 0.6)
+                border-left: 6px solid rgb(0, 113, 53)
+                color: white
+
+        .employment-list
+            .employment-details-list
+                list-style: none
+
+            .employment-details-list-item
+                display: none
+                width: 90%
+                padding-top: 4%
+                padding-left: 3%
+
+            p
+                margin: 0
+                margin-top: 2%
+
+            a, a:visited, a:active
+                color: black
+                font-weight: normal
+                text-decoration: none
+                &:hover
+                    color: #555555
+
+            .company-logo
+                width: 90%
+
+            .description-list
+                list-style-type: disc
+                padding-top: 1%
+                padding-left: 4%
+
+                p
+                    color: rgb(76, 79, 94)
+
+
+
+
+
+
+

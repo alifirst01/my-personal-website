@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './styles/themes/_app.sass';
+import './styles/themes/_htmltags.sass';
+import './styles/themes/_animations.sass';
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Employment from "./components/Employment";
 
 class App extends Component {
   constructor(){
@@ -30,8 +33,9 @@ class App extends Component {
                     <Home updateContent={this.switchHome}/>
                 ) : (
                     [
-                        <About />,
-                        <Projects />,
+                        <About/>,
+                        <Projects/>,
+                        <Employment/>,
                     ]
                 )}
             </div>
