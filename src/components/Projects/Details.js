@@ -4,7 +4,6 @@ import {Card, Col, Row} from "react-bootstrap";
 import { faGithub } from '@fortawesome/fontawesome-free-brands';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Reveal from 'react-reveal/Reveal';
 
 class Details extends Component{
     constructor(props, context) {
@@ -37,8 +36,8 @@ class Details extends Component{
                             {
                                 this.props.techIcons.map((icon, index) => {
                                     return(
-                                        <li>
-                                            <img src={icon} title={this.props.data.technologies[index]}/>
+                                        <li key={index}>
+                                            <img src={icon} title={this.props.data.technologies[index]} alt=""/>
                                         </li>
                                     );
                                 })

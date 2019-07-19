@@ -27,7 +27,7 @@ class Projects extends Component{
                     {
                         Object.keys(this.state.projects).map((project, index) => {
                             return (
-                                <div>
+                                <div key={index}>
                                     <Row className="project-row">
                                         {   (index % 2)
                                             ? <Col md={7}>

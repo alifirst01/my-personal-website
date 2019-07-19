@@ -33,9 +33,9 @@ class App extends Component {
                     <Home updateContent={this.switchHome}/>
                 ) : (
                     [
-                        <About/>,
-                        <Projects/>,
-                        <Employment/>,
+                        <About key={"about"}/>,
+                        <Projects key={"projects"}/>,
+                        <Employment key={"employment"}/>,
                     ]
                 )}
             </div>

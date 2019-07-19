@@ -50,7 +50,7 @@ class About extends Component{
                             </Row>
                         </Col>
                         <Col md={6}>
-                            <Skills/>
+                            <Skills key={"skills"}/>
                             {/*<img src={Photo} alt="This is the profile photo"/>*/}
                         </Col>
                     </Row>

@@ -3,9 +3,6 @@ import "../../styles/themes/_employment.sass"
 import {Col, Row} from "react-bootstrap";
 import EmploymentService from "../../services/EmploymentService";
 import Zoom from 'react-reveal/Zoom';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import { faCalendarAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Thumbnails from "./Thumbnails";
 import EmploymentDetails from "./EmploymentDetails";
 
@@ -24,21 +21,34 @@ class Employment extends Component{
         document.getElementsByClassName("employment-thumbnails-list-item")[0].classList.add("activeEmp");
     }
 
+    isActive = (activeIndex) => {
+        var employmentThumbnailsTags = document.getElementsByClassName("employment-thumbnails-list-item");
+        var ans = false;
+        Array.prototype.forEach.call(employmentThumbnailsTags, (tag, index) => {
+            if(tag.classList.contains("activeEmp") && (index === activeIndex))
+                ans = true;
+        });
+        return ans;
+    };
+
     switchEmploymentDetails = (index) => {
-        this.setState({ show: !this.state.show });
-        setTimeout(function(){
-            var employmentThumbnailsTags = document.getElementsByClassName("employment-thumbnails-list-item");
-            Array.prototype.forEach.call(employmentThumbnailsTags, tag => {
-                tag.classList.remove("activeEmp");
-            });
-            var employmentListTags = document.getElementsByClassName("employment-details-list-item");
-            Array.prototype.forEach.call(employmentListTags, tag => {
-                tag.style.display = "none";
-            });
-            employmentListTags[index].style.display = "block";
-            employmentThumbnailsTags[index].classList.add("activeEmp");
+        if(!this.isActive(index)) {
             this.setState({ show: !this.state.show });
-        }.bind(this), 500);
+
+            setTimeout(function() {
+                var employmentThumbnailsTags = document.getElementsByClassName("employment-thumbnails-list-item");
+                Array.prototype.forEach.call(employmentThumbnailsTags, tag => {
+                    tag.classList.remove("activeEmp");
+                });
+                var employmentListTags = document.getElementsByClassName("employment-details-list-item");
+                Array.prototype.forEach.call(employmentListTags, tag => {
+                    tag.style.display = "none";
+                });
+                employmentListTags[index].style.display = "block";
+                employmentThumbnailsTags[index].classList.add("activeEmp");
+                this.setState({ show: !this.state.show });
+            }.bind(this), 500);
+        }
     };
 
     render() {

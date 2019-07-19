@@ -13,7 +13,7 @@ class Thumbnails extends Component{
                     {
                         Object.keys(this.props.employmentHistory).map((employment, index) => {
                             return(
-                                <li className="employment-thumbnails-list-item" onClick={() => this.props.switchEmploymentDetails(index)}>
+                                <li key={index} className="employment-thumbnails-list-item" onClick={() => this.props.switchEmploymentDetails(index)}>
                                     <h6>{this.props.employmentHistory[employment].data.company}</h6>
                                     <p>{this.props.employmentHistory[employment].data.title}</p>
                                 </li>

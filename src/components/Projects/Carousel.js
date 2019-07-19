@@ -13,10 +13,10 @@ class PFCarousel extends Component{
             <div className="carousel-main">
                 <Carousel showThumbs={false} infiniteLoop={true}>
                     {
-                        this.props.images.map(image => {
+                        this.props.images.map((image, index) => {
                             return(
-                                <div>
-                                    <img src={image} />
+                                <div key={index}>
+                                    <img src={image} alt=""/>
                                 </div>
                             );
                         })

@@ -15,12 +15,12 @@ class EmploymentDetails extends Component{
             <div className="employment-list">
                 <ul className="employment-details-list">
                     {
-                        Object.keys(this.props.employmentHistory).map(employment => {
+                        Object.keys(this.props.employmentHistory).map((employment, index1) => {
                             return(
-                                <li className="employment-details-list-item">
+                                <li key={index1} className="employment-details-list-item">
                                     <Row>
                                         <Col md={2}>
-                                            <img className="company-logo" src={this.props.employmentHistory[employment].logo} />
+                                            <img className="company-logo" src={this.props.employmentHistory[employment].logo} alt=""/>
                                         </Col>
                                         <Col md={10}>
                                             <h5>{this.props.employmentHistory[employment].data.title}</h5>
@@ -38,15 +38,15 @@ class EmploymentDetails extends Component{
 
                                             <ul className="description-list">
                                                 {
-                                                    Object.keys(this.props.employmentHistory[employment].data.description).map(desc => {
+                                                    Object.keys(this.props.employmentHistory[employment].data.description).map((desc, index2) => {
                                                         return (
-                                                            <li className="description-list-item">
+                                                            <li key={index2} className="description-list-item">
                                                                 <p>{desc}</p>
                                                                 <ul>
                                                                     {
-                                                                        this.props.employmentHistory[employment].data.description[desc].map(subDesc => {
+                                                                        this.props.employmentHistory[employment].data.description[desc].map((subDesc, index3) => {
                                                                             return (
-                                                                                <li>
+                                                                                <li key={index3}>
                                                                                     <p>{subDesc}</p>
                                                                                 </li>
                                                                             );

@@ -19,16 +19,16 @@ class Skills extends Component{
                 {
                     Object.keys(this.state.skills).map(skillType => {
                         return(
-                            <div>
+                            <div key={skillType}>
                                 <h3 className="skill-type">{skillType}</h3>
                                 <div className="skill-bars">
                                     <ul>
                                         {
                                             Object.keys(this.state.skills[skillType]['skills']).map((skill, index) => {
                                                 return(
-                                                    <Row style={{width: "90%"}}>
+                                                    <Row key={skill} style={{width: "90%"}}>
                                                         <Col md={1} className="skill-icon">
-                                                            <img src={this.state.skills[skillType]['skillsIcons'][index]}/>
+                                                            <img src={this.state.skills[skillType]['skillsIcons'][index]} alt=""/>
                                                         </Col>
                                                         <Col md={11} className="skill">
                                                             <li style={{width: this.state.skills[skillType]['skills'][skill] + "%"}}>
