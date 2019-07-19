@@ -11,7 +11,6 @@ class Skills extends Component{
         this.state = {
             skills: this.skillsService.getUserSkills()
         };
-        console.log(Object.keys(this.state.skills));
     }
 
     render() {
