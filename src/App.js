@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './styles/themes/_app.sass';
 import './styles/themes/_htmltags.sass';
+import './styles/themes/_app.sass';
 import './styles/themes/_animations.sass';
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
@@ -13,7 +13,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-        home: false,
+        home: true,
     };
   }
 

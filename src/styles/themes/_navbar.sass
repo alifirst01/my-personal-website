@@ -1,3 +1,5 @@
+@import "variables"
+
 .custom-navbar
   text-align: right
   overflow: hidden
@@ -29,10 +31,10 @@
 
     &:hover:after
       width: 100%
-      background: rgba(0, 206, 115, 0.88)
+      background: $navbar-link-underline
 
   a, a:visited, a:hover, a:active
-    color: rgba(0, 145, 77, 0.88)
+    color: $navbar-link
     font-weight: 450
     font-size: 14px
     display: block
@@ -40,17 +42,17 @@
     text-decoration: none
 
 .active
-  box-shadow: 0 0 8px rgba(0, 206, 115, 0.4)
+  box-shadow: 0 0 8px $navbar-shadow
 
 #resume-button
-  border: 1px solid rgba(0, 206, 115, 0.88)
+  border: 1px solid $lighter-theme
   font-size: 14px
   transition: 0.5s
   text-transform: capitalize
 
   &:hover
-    background-color: rgba(0, 206, 115, 0.88)
-    color: white
+    background-color: $lighter-theme
+    color: $resume-button-font-color-hover
 
 
 

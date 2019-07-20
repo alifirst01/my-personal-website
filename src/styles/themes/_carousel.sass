@@ -1,3 +1,5 @@
+@import "variables"
+
 .carousel-main
   height: 80vh
   animation: 1s ease-out 0s 1 fadeIn
@@ -28,12 +30,12 @@
   .control-prev.control-arrow
     left: 0
     &:before
-      border-right: 8px solid #7f7f7f
+      border-right: 8px solid $carousel-arrows
       opacity: 0.7
   .control-next.control-arrow
     right: 0
     &:before
-      border-left: 8px solid #7f7f7f
+      border-left: 8px solid $carousel-arrows
       opacity: 0.7
   position: relative
   width: 100%
@@ -60,9 +62,9 @@
       height: 20%
       position: absolute
 
-      background-color: rgba(124, 124, 124, 0)
+      background-color: $carousel-arrows-background
       &:hover
-        background: rgba(215, 215, 215, 0.8)
+        background: $carousel-arrows-background-hover
         opacity: 1
 
   .slider-wrapper
@@ -132,7 +134,7 @@
       -o-transition: opacity .25s ease-in
       transition: opacity .25s ease-in
       opacity: .3
-      background: #00a55a
+      background: $carousel-thumbnails-dots
       border-radius: 50%
       width: 8px
       height: 8px

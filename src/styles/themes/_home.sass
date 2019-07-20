@@ -1,3 +1,5 @@
+@import "variables"
+
 .home
   padding-top: 4%
   padding-left: 5%
@@ -7,21 +9,21 @@
   h1
     font-family: "Courier New"
     margin: 0
-    color: rgb(0, 165, 90)
+    color: $h1-tag-color
     font-size: 50px
 
   h3
     font-family: "Calibri Light"
-    color: rgb(98, 98, 98)
+    color: $paragraph-text-color
     font-size: 30px
     margin: 1% 0
 
 #explore-button
   margin-left: 5%
   margin-top: 1%
-  color: rgb(0, 165, 90)
+  color: $explore-button
   font-weight: bold
-  border: 1px solid rgb(0, 165, 90)
+  border: 1px solid $explore-button
   border-radius: 8px
   text-transform: capitalize
 
@@ -40,7 +42,7 @@
   width: 0.5vw
   height: 0.5vw
   border: 0.2vw solid
-  border-color: rgb(0, 165, 90) transparent transparent rgb(0, 165, 90)
+  border-color: $explore-button transparent transparent $explore-button
   transform: rotate(135deg)
 
 .arrowSliding

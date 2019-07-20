@@ -1,3 +1,5 @@
+@import "variables"
+
 .employment
     padding-left: 1%
     text-align: left
@@ -14,23 +16,19 @@
                 list-style: none
                 border-radius: 10px
             li
-                border-left: 6px solid rgb(0, 187, 86)
-                //border-top-left-radius: 8px
-                //border-bottom-left-radius: 8px
-                //border-top-right-radius: 5px
-                //border-bottom-right-radius: 5px
+                border-left: 6px solid $employment-thumbs-border
                 padding-top: 2%
                 padding-bottom: 0.5%
                 padding-left: 2%
                 cursor: pointer
                 transition: color 0.2s ease, background-color 1s ease
                 &:hover
-                    background-color: rgba(0, 187, 86, 0.6)
+                    background-color: $employment-thumbs-background
                     color: white
 
             .activeEmp
-                background-color: rgba(0, 187, 86, 0.6)
-                border-left: 6px solid rgb(0, 113, 53)
+                background-color: $employment-thumbs-background
+                border-left: 6px solid $employment-thumbs-border-active
                 color: white
 
         .employment-list
@@ -63,7 +61,7 @@
                 padding-left: 4%
 
                 p
-                    color: rgb(76, 79, 94)
+                    color: $employment-description
 
 
 

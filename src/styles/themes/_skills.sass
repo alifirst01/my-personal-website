@@ -1,3 +1,5 @@
+@import "variables"
+
 .skills
     text-align: left
 
@@ -22,12 +24,12 @@
                 border-top-right-radius: 3px
                 border-bottom-right-radius: 10px
                 font-weight: 500
-                box-shadow: 0 0 1px 1px rgba(0, 206, 115, 0.88)
-                background: rgba(0, 206, 115, 0.88)
+                box-shadow: 0 0 1px 1px $skills-bar-fill
+                background: $skills-bar-fill
                 animation: 2s ease-out 0s 1 widthInFromLeft
 
             img
-                border: 3px solid rgba(0, 206, 115, 0.88)
+                border: 3px solid $skills-icons-border
                 animation: border .4s ease 1 forwards
                 background-color: white
                 border-radius: 50%
@@ -47,8 +49,8 @@
             display: inline-block
 
         .skill-level
-            border-bottom: 2px solid rgba(0, 206, 115, 0.5)
-            border-right: 2px solid rgba(0, 206, 115, 0.5)
+            border-bottom: 2px solid $skill-level-scale
+            border-right: 2px solid $skill-level-scale
             height: 10px
             width: 25%
             padding-right: 1%
