@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './styles/themes/_htmltags.sass';
+import './styles/globals/_htmltags.sass';
+import './styles/globals/_animations.sass';
 import './styles/themes/_app.sass';
-import './styles/themes/_animations.sass';
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
