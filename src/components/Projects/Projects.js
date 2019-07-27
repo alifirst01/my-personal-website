@@ -14,12 +14,13 @@ class Projects extends Component{
         this.projectService = new ProjectService();
         this.state = {
             projects: this.projectService.getAllProjectsData(),
+            moreProjectsLink: "https://github.com/alifirst01"
         };
     }
 
     render() {
         return(
-            <div className="projects">
+            <section id="projects">
                 <div className="header">
                     <h1>Projects</h1>
                 </div>
@@ -55,7 +56,12 @@ class Projects extends Component{
                         })
                     }
                 </div>
-            </div>
+                <div className="more-projects-link">
+                    <a href={this.state.moreProjectsLink} target="_blank" >
+                        More Projects
+                    </a>
+                </div>
+            </section>
         );
     }
 }

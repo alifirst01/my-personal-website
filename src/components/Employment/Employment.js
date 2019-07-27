@@ -53,7 +53,7 @@ class Employment extends Component{
 
     render() {
         return(
-            <div className="employment">
+            <section id="employment">
                 <div className="header">
                     <h1>Experience</h1>
                 </div>
@@ -69,7 +69,7 @@ class Employment extends Component{
                         </Col>
                     </Row>
                 </div>
-            </div>
+            </section>
         )
     }
 }

@@ -12,7 +12,7 @@ class About extends Component{
 
     render() {
         return(
-            <div className="about">
+            <section id="about">
                 <div className="content">
                     <Row>
                         <Col md={6} className="intro">
@@ -57,7 +57,7 @@ class About extends Component{
 
 
                 </div>
-            </div>
+            </section>
         )
     }
 }
