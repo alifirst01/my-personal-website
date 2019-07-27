@@ -17,17 +17,23 @@ class App extends Component {
     };
   }
 
+  backToHome = () => {
+      this.setState({
+          home: true,
+      });
+  };
+
   switchHome = () => {
       this.setState({
-          home: !this.state.home,
-      })
+          home: false,
+      });
   };
 
   render() {
       const home = this.state.home;
       return (
             <div className="App">
-                <Navbar/>
+                <Navbar home={this.state.home} switchHome={this.switchHome} backToHome={this.backToHome}/>
                 <Sidebar />
                 {home ? (
                     <Home updateContent={this.switchHome}/>
