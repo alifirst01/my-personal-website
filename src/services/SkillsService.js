@@ -1,3 +1,4 @@
+import {faCode} from '@fortawesome/free-solid-svg-icons';
 
 export default class SkillsService{
     constructor(){
@@ -23,7 +24,8 @@ export default class SkillsService{
                 try {
                     return require("../assets/images/skills-icons/" + skillIcon + ".png");
                 }catch (e) {
-                    console.log("Error: Couldn't find file:", "../assets/images/icons/" + skillIcon)
+                    console.log("Error: Couldn't find file:", "../assets/images/icons/" + skillIcon);
+                    return faCode;
                 }
             });
 

@@ -22,8 +22,8 @@ class Details extends Component{
                             </Col>
                             <Col md={4}>
                                 <ul>
-                                    <li><FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon"/></li>
-                                    <li><FontAwesomeIcon icon={faGithub} className="link-icon"/></li>
+                                    <li><FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon" title="External"/></li>
+                                    <li><FontAwesomeIcon icon={faGithub} className="link-icon" title="Github"/></li>
                                 </ul>
                             </Col>
                         </Row>
@@ -37,12 +37,14 @@ class Details extends Component{
                                 this.props.techIcons.map((icon, index) => {
                                     return(
                                         <li key={index}>
-                                            <img src={icon} title={this.props.data.technologies[index]} alt=""/>
+                                            {   (typeof icon == "string")
+                                                ? <img src={icon} title={this.props.data.technologies[index]} alt=""/>
+                                                : <FontAwesomeIcon size="2x" icon={icon} title={this.props.data.technologies[index]}/>
+                                            }
                                         </li>
                                     );
                                 })
                             }
-
                         </ul>
                     </Card.Body>
                 </Card>

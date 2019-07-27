@@ -1,4 +1,5 @@
 import Project from "../classes/Project";
+import {faCode} from '@fortawesome/free-solid-svg-icons';
 
 export default class ProjectService{
     constructor(){
@@ -26,7 +27,8 @@ export default class ProjectService{
             try {
                 return require("../assets/images/icons/" + tech + ".png");
             }catch (e) {
-                console.log("Error: Couldn't find file:", "../assets/images/icons/" + tech)
+                console.log("Error: Couldn't find file:", "../assets/images/icons/" + tech);
+                return faCode;
             }
         });
         let projectData = new Project(data.title, data.description, images, data.technologies, techIcons, data.github, data.external);

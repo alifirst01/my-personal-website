@@ -3,6 +3,8 @@ import "../../styles/themes/_skills.sass";
 import SkillsService from "../../services/SkillsService";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import {faExternalLinkAlt} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 class Skills extends Component{
     constructor(props, context) {
@@ -28,7 +30,10 @@ class Skills extends Component{
                                                 return(
                                                     <Row key={skill} style={{width: "90%"}}>
                                                         <Col md={1} className="skill-icon">
-                                                            <img src={this.state.skills[skillType]['skillsIcons'][index]} alt=""/>
+                                                            {   (typeof this.state.skills[skillType]['skillsIcons'][index] == "string")
+                                                                ?  <img src={this.state.skills[skillType]['skillsIcons'][index]} alt=""/>
+                                                                :  <FontAwesomeIcon size="2x" icon={this.state.skills[skillType]['skillsIcons'][index]}/>
+                                                            }
                                                         </Col>
                                                         <Col md={11} className="skill">
                                                             <li style={{width: this.state.skills[skillType]['skills'][skill] + "%"}}>
