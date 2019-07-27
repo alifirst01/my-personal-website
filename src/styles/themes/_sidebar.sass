@@ -1,29 +1,33 @@
 @import "../globals/variables"
 
 .sidebar
-  text-align: center
-  overflow: hidden
-  position: fixed
-  left: 0
-  top: 23%
-  width: 6%
+    background-color: $sidebar-background
+    text-align: center
+    overflow: hidden
+    position: fixed
+    left: 0
+    top: 23%
+    width: 6%
 
-  ul
-    padding: 0
-    list-style: none
+    ul
+        padding: 0
+        list-style: none
 
-  li
-    margin: 40% 23%
-    padding: 10% 10%
-    border-radius: 40px
-    cursor: pointer
-    transition: background-color 0.5s ease
+    li
+        margin: 38% 23%
+        padding: 10% 10%
+        cursor: pointer
+        transition: border-color 1s ease
+        border: 2px solid $sidebar-icon-border
+        border-radius: 50%
+        &:hover
+            border: 2px solid $sidebar-icon-border-hover
 
-    &:hover
-      background-color: rgba(0, 206, 115, 0.18)
+    .icon
+        font-size: 25px
 
-  .icon
-    font-size: 25px
+    a
+        text-decoration: none
 
 
 

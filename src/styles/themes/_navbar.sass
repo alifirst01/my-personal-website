@@ -1,60 +1,74 @@
 @import "../globals/variables"
 
 .custom-navbar
-  text-align: right
-  overflow: hidden
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  background-color: white
-  z-index: 5
-  transition: box-shadow 0.2s linear
-
-  ul
-    padding: 15px 20px 12px
+    overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
     margin: 0
-    list-style: none
+    z-index: 5
+    transition: box-shadow 0.2s linear
+    background-color: $navbar-background
 
-  li
-    display: inline-block
-    margin-left: 1%
+    .home-icon
+        font-size: 25px
+        margin-top: 10px
+        margin-left: 30%
+        color: $navbar-home-button
+        cursor: pointer
+        border: 0.5px solid $navbar-home-border
+        border-radius: 50%
+        transition: 0.5s
+        &:hover
+            background-color: $navbar-home-hover
+            color: $white
 
-  .link
-    &:after
-      content: ''
-      display: block
-      height: 3px
-      width: 0
-      background: transparent
-      transition: width 0.5s ease, background-color 0.5s ease
+    .navlist
+        padding: 15px 20px 12px
+        margin: 0
+        list-style: none
 
-    &:hover:after
-      width: 100%
-      background: $navbar-link-underline
+    li
+        display: inline-block
+        margin-left: 1%
 
-  a, a:visited, a:hover, a:active
-    color: $navbar-link
-    font-weight: 450
-    font-size: 14px
-    display: block
-    padding: 6px 12px
-    text-decoration: none
+    .link
+        &:after
+            content: ''
+            display: block
+            height: 3px
+            width: 0
+            background: transparent
+            transition: width 0.5s ease, background-color 0.5s ease
+
+        &:hover:after
+            width: 100%
+            background: $navbar-link-underline
+
+    a, a:visited, a:hover, a:active
+        color: $navbar-link
+        font-weight: 400
+        font-size: 16px
+        display: block
+        padding: 6px 12px
+        text-decoration: none
 
 .active
-  box-shadow: 0 0 8px $navbar-shadow
+    box-shadow: 0 0 8px $navbar-bottom-shadow
 
 #resume-button
-  border: 1px solid $lighter-theme
-  font-size: 14px
-  transition: 0.5s
-  text-transform: capitalize
+    border: 1px solid $lighter-theme
+    font-size: 15px
+    transition: 0.5s
+    text-transform: capitalize
+    padding: 8px 18px
+    background-color: $resume-button-fill
+    color: $navbar-link
 
-  &:hover
-    background-color: $lighter-theme
-    color: $resume-button-font-color-hover
-
-
+    &:hover
+        background-color: $lighter-theme
+        color: $white
 
 
 

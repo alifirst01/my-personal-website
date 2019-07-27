@@ -1,65 +1,35 @@
 @import "../globals/variables"
 
 .home
-  padding-top: 4%
-  padding-left: 5%
-  text-align: left
-  //background-image: url("../../assets/images/profile-photo/photo.jpg")
+    padding-top: 12%
+    padding-left: 5%
+    text-align: left
 
-  h1
-    font-family: "Courier New"
-    margin: 0
-    color: $h1-tag-color
-    font-size: 50px
+    h1
+        font-family: "Courier New"
+        margin: 0
+        color: $h1-tag-color
+        font-size: 50px
 
-  h3
-    font-family: "Calibri Light"
-    color: $paragraph-text-color
-    font-size: 30px
-    margin: 1% 0
+    h3
+        font-family: "Calibri Light"
+        color: $paragraph-text-color
+        font-size: 30px
+        margin: 1% 0
 
 #explore-button
-  margin-left: 5%
-  margin-top: 1%
-  color: $explore-button
-  font-weight: bold
-  border: 1px solid $explore-button
-  border-radius: 8px
-  text-transform: capitalize
+    margin-left: 5%
+    padding: 8px 18px
+    margin-top: 1%
+    color: $explore-button
+    font-weight: bold
+    border: 1px solid $explore-button
+    border-radius: 8px
+    text-transform: capitalize
 
-  &:hover
-    background-color: rgba(0, 165, 90, 0.09)
+    &:hover
+        background-color: rgba(0, 165, 90, 0.09)
 
-
-#arrowAnim
-  width: 1.5vw
-  height: 5vh
-  display: flex
-  justify-content: center
-  align-items: center
-
-.arrow
-  width: 0.5vw
-  height: 0.5vw
-  border: 0.2vw solid
-  border-color: $explore-button transparent transparent $explore-button
-  transform: rotate(135deg)
-
-.arrowSliding
-  position: absolute
-  margin-left: 5%
-  -webkit-animation: slide 2s linear infinite
-  animation: slide 3s linear infinite
-
-.delay1
-  -webkit-animation-delay: 0.5s
-  animation-delay: 0.5s
-
-.delay2
-  -webkit-animation-delay: 2s
-  animation-delay: 0.5s
-
-.delay3
-  -webkit-animation-delay: 2s
-  animation-delay: 1s
+    &:active
+        outline: 0
 
