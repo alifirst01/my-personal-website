@@ -56,11 +56,14 @@ class Projects extends Component{
                         })
                     }
                 </div>
-                <div className="more-projects-link">
-                    <a href={this.state.moreProjectsLink} target="_blank" >
-                        More Projects
-                    </a>
-                </div>
+                <Fade bottom duration={2000} delay={500}>
+                    <div className="more-projects-link">
+                        <a href={this.state.moreProjectsLink} target="_blank" >
+                            More Projects
+                        </a>
+                    </div>
+                </Fade>
+
             </section>
         );
     }
