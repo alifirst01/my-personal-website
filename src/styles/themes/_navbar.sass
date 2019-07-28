@@ -58,17 +58,23 @@
     box-shadow: 0 0 8px $navbar-bottom-shadow
 
 #resume-button
-    border: 1px solid $lighter-theme
-    font-size: 15px
-    transition: 0.5s
-    text-transform: capitalize
-    padding: 8px 18px
-    background-color: $resume-button-fill
-    color: $navbar-link
+    a, a:visited, a:hover, a:active
+        border: 1px solid $lighter-theme
+        border-radius: 4px
+        text-decoration: none
+        font-size: 15px
+        transition: 0.5s
+        text-transform: capitalize
+        padding: 8px 18px
+        background-color: $resume-button-fill
+        color: $navbar-link
+        cursor: pointer
 
-    &:hover
-        background-color: $lighter-theme
-        color: $white
+        &:hover
+            background-color: $lighter-theme
+            color: $white
+        &:active
+            outline: none
 
 
 

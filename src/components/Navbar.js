@@ -9,7 +9,9 @@ import Button from "react-bootstrap/Button";
 class Navbar extends Component{
     constructor(props, context) {
         super(props, context);
-        this.state = {};
+        this.state = {
+            resumeLink: "https://drive.google.com/file/d/1SU-LTjz8nFSGM67k0bOW3oMYkVdUSiQD/view?usp=sharing"
+        };
     }
 
     componentDidMount = () => {
@@ -35,7 +37,7 @@ class Navbar extends Component{
             this.props.switchHome();
             setTimeout(function () {
                 document.querySelector(tag).scrollIntoView({ top: 500, behavior: 'smooth' });
-            }, 1000);
+            }, 700);
         }
         else
             document.querySelector(tag).scrollIntoView({ top: 500, behavior: 'smooth' });
@@ -54,8 +56,8 @@ class Navbar extends Component{
                         <li className="link"><a href="#about" onClick={() => this.handleClick(event, "#about")}>About</a></li>
                         <li className="link"><a href="#projects" onClick={() => this.handleClick(event, "#projects")}>Projects</a></li>
                         <li className="link"><a href="#employment" onClick={() => this.handleClick(event, "#employment")}>Experience</a></li>
-                        <li className="link"><a href="#contact" onClick={() => this.handleClick(event, "contact")}>Contact</a></li>
-                        <li><Button id="resume-button">Resume</Button></li>
+                        <li className="link"><a href="#contact" onClick={() => this.handleClick(event, "#contact")}>Contact</a></li>
+                        <li id="resume-button"><a href={this.state.resumeLink} target="_blank">Resume</a></li>
                     </ul>
                 </Col>
             </Row>
