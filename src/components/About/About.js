@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "../../styles/themes/_about.sass";
-import Photo from "../../assets/images/profile-photo/photo.jpg";
 import {Col, Row} from "react-bootstrap";
 import Skills from "./Skills";
 
@@ -51,7 +50,6 @@ class About extends Component{
                         </Col>
                         <Col md={6}>
                             <Skills key={"skills"}/>
-                            {/*<img src={Photo} alt="This is the profile photo"/>*/}
                         </Col>
                     </Row>
 
