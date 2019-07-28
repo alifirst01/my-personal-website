@@ -8,6 +8,7 @@ import Sidebar from "./components/Sidebar";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Employment from "./components/Employment/Employment";
+import Contact from "./components/Contact";
 
 class App extends Component {
   constructor(){
@@ -42,6 +43,7 @@ class App extends Component {
                         <About key={"about"}/>,
                         <Projects key={"projects"}/>,
                         <Employment key={"employment"}/>,
+                        <Contact key={"contact"}/>
                     ]
                 )}
             </div>
