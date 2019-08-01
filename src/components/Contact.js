@@ -51,7 +51,6 @@ class Contact extends Component{
                                         <FontAwesomeIcon icon={faLinkedin} className="contact-icon" style={{color: "#0077B5"}} title="LinkedIn"/>
                                         <span className="ctext">{this.state.linkedIn}</span>
                                     </li>
-
                                     <li>
                                         <FontAwesomeIcon icon={faSkype} className="contact-icon" style={{color: "#009efb"}} title="Skype"/>
                                         <span className="ctext">{this.state.skype}</span>
