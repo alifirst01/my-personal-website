@@ -39,12 +39,13 @@ class App extends Component {
                 {home ? (
                     <Home updateContent={this.switchHome}/>
                 ) : (
-                    [
-                        <About key={"about"}/>,
-                        <Projects key={"projects"}/>,
-                        <Employment key={"employment"}/>,
-                        <Contact key={"contact"}/>
-                    ]
+                    <About key={"about"}/>
+                        // [
+                        //     <About key={"about"}/>,
+                        //     <Projects key={"projects"}/>,
+                        //     <Employment key={"employment"}/>,
+                        //     <Contact key={"contact"}/>
+                        // ]
                 )}
             </div>
       );

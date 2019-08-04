@@ -14,9 +14,14 @@
         border: 0.5px solid $navbar-home-border
         border-radius: 50%
         transition: 0.5s
-        &:hover
+        &:hover, &:active
             background-color: $navbar-home-hover
             color: $white
+
+    .navbar-toggler, .navbar-toggler:active
+        border-color: $resume-button-border
+        color: $navbar-link
+        outline: none
 
     #nav-list
         padding: 5px 20px 5px

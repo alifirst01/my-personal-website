@@ -28,7 +28,7 @@ class About extends Component{
                                 Few technologies I've been working with recently:
                             </p>
                             <Row className="technologies">
-                                <Col md={7}>
+                                <Col xs={6} md={7}>
                                     <h4>Programming Languages</h4>
                                     <ul>
                                         <li>JavaScript (ES6)</li>
@@ -37,7 +37,7 @@ class About extends Component{
                                         <li>Python</li>
                                     </ul>
                                 </Col>
-                                <Col md={5}>
+                                <Col xs={6} md={5}>
                                     <h4>Frameworks</h4>
                                     <ul>
                                         <li>React</li>

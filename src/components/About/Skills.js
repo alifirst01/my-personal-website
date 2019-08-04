@@ -29,13 +29,13 @@ class Skills extends Component{
                                             Object.keys(this.state.skills[skillType]['skills']).map((skill, index) => {
                                                 return(
                                                     <Row key={skill} style={{width: "90%"}}>
-                                                        <Col md={1} className="skill-icon">
+                                                        <Col xs={0} md={1} className="skill-icon">
                                                             {   (typeof this.state.skills[skillType]['skillsIcons'][index] == "string")
                                                                 ?  <img src={this.state.skills[skillType]['skillsIcons'][index]} alt=""/>
                                                                 :  <FontAwesomeIcon size="2x" icon={this.state.skills[skillType]['skillsIcons'][index]}/>
                                                             }
                                                         </Col>
-                                                        <Col md={11} className="skill">
+                                                        <Col xs={12} md={11} className="skill">
                                                             <li style={{width: this.state.skills[skillType]['skills'][skill] + "%"}}>
                                                                 {skill}
                                                             </li>
