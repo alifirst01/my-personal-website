@@ -28,7 +28,7 @@ class Skills extends Component{
                                         {
                                             Object.keys(this.state.skills[skillType]['skills']).map((skill, index) => {
                                                 return(
-                                                    <Row key={skill} style={{width: "90%"}}>
+                                                    <Row key={skill} className="skill-row">
                                                         <Col xs={0} md={1} className="skill-icon">
                                                             {   (typeof this.state.skills[skillType]['skillsIcons'][index] == "string")
                                                                 ?  <img src={this.state.skills[skillType]['skillsIcons'][index]} alt=""/>
@@ -52,7 +52,7 @@ class Skills extends Component{
                 }
                 <div>
                     <ul className="skill-levels">
-                        <Row style={{height: "10px", width: "90%"}}>
+                        <Row className="skill-level-row">
                             <Col md={1}>
                             </Col>
                             <Col md={11}>

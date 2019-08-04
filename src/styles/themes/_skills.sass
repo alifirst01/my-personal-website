@@ -11,6 +11,8 @@
         text-transform: capitalize
 
     .skill-bars
+        .skill-row
+            width: 90%
         ul
             list-style: none
             margin: 0
@@ -48,6 +50,10 @@
         li
             display: inline-block
 
+        .skill-level-row
+            height: 10px
+            width: 90%
+
         .skill-level
             border-bottom: 2px solid $skill-level-scale
             border-right: 2px solid $skill-level-scale
@@ -58,6 +64,25 @@
             font-size: 13px
             width: 25%
 
+@media screen and (max-width: 768px)
+    .skills
+        .skill
+            padding: 0
+        .skill-bars
+            ul
+                li
+                    font-size: 13px
+            .skill-row
+                width: 100%
+        .skill-icon
+            display: none
+        .skill-levels
+            .skill-level-row
+                width: 100%
+
+            .skill-level-text
+                font-size: 11px
+
 @media screen and (max-width: 600px)
     .skills
         margin-top: 5%
@@ -65,3 +90,12 @@
             display: none
         .skill
             padding: 0
+        .skill-bars
+            ul
+                li
+                    border-top-right-radius: 3px
+                    border-bottom-right-radius: 3px
+                    font-size: 12px
+        .skill-levels
+            .skill-level-text
+                font-size: 11px

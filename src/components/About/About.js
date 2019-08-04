@@ -52,8 +52,6 @@ class About extends Component{
                             <Skills key={"skills"}/>
                         </Col>
                     </Row>
-
-
                 </div>
             </section>
         )
