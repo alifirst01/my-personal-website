@@ -2,11 +2,10 @@ import React, { Component } from 'react';
 import "../styles/themes/_navbar.sass";
 import {faHome} from '@fortawesome/free-solid-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { Navbar, Nav } from "react-bootstrap";
 
-class Navbar extends Component{
+class PFNavbar extends Component{
     constructor(props, context) {
         super(props, context);
         this.state = {
@@ -25,10 +24,10 @@ class Navbar extends Component{
     handleScroll = () => {
         var scroll = window.scrollY;
         var element = document.getElementsByClassName("custom-navbar")[0];
-        if(!element.classList.contains('active') && scroll > 0)
-            element.classList.add("active");
-        else if(scroll === 0 && element.classList.contains('active'))
-            element.classList.remove("active");
+        if(!element.classList.contains('nav-active') && scroll > 0)
+            element.classList.add("nav-active");
+        else if(scroll === 0 && element.classList.contains('nav-active'))
+            element.classList.remove("nav-active");
     };
 
     handleClick = (e, tag) => {
@@ -45,24 +44,25 @@ class Navbar extends Component{
 
     render() {
         return(
-            <Row className="custom-navbar">
-                <Col md={2} style={{textAlign: "left"}}>
+            <Navbar collapseOnSelect expand="md" className="custom-navbar" fixed="top">
+                <Navbar.Brand className="home-link">
                     <Button className="home-icon" variant="link" onClick={this.props.backToHome}>
                         <FontAwesomeIcon icon={faHome} />
                     </Button>
-                </Col>
-                <Col md={10} style={{textAlign: "right"}}>
-                    <ul className="navlist">
-                        <li className="link"><a href="#about" onClick={() => this.handleClick(event, "#about")}>About</a></li>
-                        <li className="link"><a href="#projects" onClick={() => this.handleClick(event, "#projects")}>Projects</a></li>
-                        <li className="link"><a href="#employment" onClick={() => this.handleClick(event, "#employment")}>Experience</a></li>
-                        <li className="link"><a href="#contact" onClick={() => this.handleClick(event, "#contact")}>Contact</a></li>
-                        <li id="resume-button"><a href={this.state.resumeLink} target="_blank">Resume</a></li>
-                    </ul>
-                </Col>
-            </Row>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
+                    <Nav id="nav-list">
+                        <Nav.Link className="link"><a href="#about" onClick={() => this.handleClick(event, "#about")}>About</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#projects" onClick={() => this.handleClick(event, "#projects")}>Projects</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#employment" onClick={() => this.handleClick(event, "#employment")}>Experience</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#contact" onClick={() => this.handleClick(event, "#contact")}>Contact</a></Nav.Link>
+                        <Nav.Link href={this.state.resumeLink} target="_blank" className="resume-button"><a>Resume</a></Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
         )
     }
 }
 
-export default Navbar;
+export default PFNavbar;

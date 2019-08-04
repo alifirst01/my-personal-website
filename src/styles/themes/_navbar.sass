@@ -1,20 +1,14 @@
 @import "../globals/variables"
 
 .custom-navbar
-    overflow: hidden
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    margin: 0
-    z-index: 5
+    padding: 0
     transition: box-shadow 0.2s linear
     background-color: $navbar-background
 
+    .home-link
+        padding-left: 6%
     .home-icon
-        font-size: 25px
-        margin-top: 10px
-        margin-left: 30%
+        font-size: 20px
         color: $navbar-home-button
         cursor: pointer
         border: 0.5px solid $navbar-home-border
@@ -24,14 +18,10 @@
             background-color: $navbar-home-hover
             color: $white
 
-    .navlist
-        padding: 15px 20px 12px
+    #nav-list
+        padding: 5px 20px 5px
         margin: 0
         list-style: none
-
-    li
-        display: inline-block
-        margin-left: 1%
 
     .link
         &:after
@@ -54,11 +44,11 @@
         padding: 6px 12px
         text-decoration: none
 
-.active
+.nav-active
     box-shadow: 0 0 8px $navbar-bottom-shadow
 
-#resume-button
-    a, a:visited, a:hover, a:active
+.resume-button
+    a, a:visited, a:hover, a:active, a:not([href])
         border: 1px solid $lighter-theme
         border-radius: 5px
         text-decoration: none
@@ -75,6 +65,10 @@
             color: $white
         &:active
             outline: none
+    &:active
+        outline: none
+
+
 
 
 
