@@ -14,7 +14,7 @@ class App extends Component {
   constructor(){
     super();
     this.state = {
-        home: true,
+        home: false,
     };
   }
 
@@ -39,19 +39,15 @@ class App extends Component {
                 {home ? (
                     <Home updateContent={this.switchHome}/>
                 ) : (
-                    <About key={"about"}/>
-                        // [
-                        //     <About key={"about"}/>,
-                        //     <Projects key={"projects"}/>,
-                        //     <Employment key={"employment"}/>,
-                        //     <Contact key={"contact"}/>
-                        // ]
+                    [
+                        <About key={"about"}/>,
+                        <Projects key={"projects"}/>,
+                    ]
                 )}
             </div>
       );
   }
-
-
 }
-
+{/*<Employment key={"employment"}/>,*/}
+{/*<Contact key={"contact"}/>*/}
 export default App;

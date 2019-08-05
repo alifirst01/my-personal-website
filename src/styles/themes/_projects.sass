@@ -80,3 +80,56 @@
         font-weight: 500
         &:hover
             background-color: rgba(0, 165, 90, 0.09)
+
+@media screen and (max-width: 1030px)
+    #projects
+        padding-top: 15%
+        .project-details-card
+            height: auto
+            .project-description
+                height: auto
+        .project-row
+            margin-bottom: 20%
+
+@media screen and (min-width: 768px) and (max-height: 500px)
+    #projects
+        .project-details-card
+            height: auto
+            .project-description
+                height: auto
+
+@media screen and (max-width: 768px) and (max-height: 500px)
+    #projects
+        .project-details-card
+            height: auto
+            width: 80%
+            .project-description
+                height: auto
+        .tech-icons-list
+            img
+                width: 10%
+        .more-projects-link
+            a, a:visited, a:hover, a:active
+                margin-left: 28%
+                font-size: 16px
+                padding: 5px 15px
+                border-radius: 5px
+
+
+@media screen and (max-width: 600px)
+    #projects
+        padding-top: 25%
+        .project-details-card
+            height: auto
+        .project-row
+            margin-bottom: 20%
+        .card-title
+            padding: 5%
+            ul
+                margin-bottom: 0
+        .more-projects-link
+            a, a:visited, a:hover, a:active
+                font-size: 14px
+                padding: 5px 15px
+                margin-left: 28%
+                border-radius: 5px

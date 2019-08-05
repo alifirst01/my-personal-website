@@ -35,12 +35,14 @@
             font-family: monospace
             font-size: 14px
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1030px)
     #about
-        padding-top: 12%
+        height: auto
+        padding-top: 20%
 
 @media screen and (max-width: 600px)
     #about
+        height: auto
         padding-top: 20%
         .intro
             margin-right: 10px
@@ -49,3 +51,12 @@
         .technologies
             li
                 font-size: 11px
+
+@media screen and (min-width: 2000px) and (min-height: 2000px)
+    #about
+        .intro
+            a
+                font-size: 50px
+        .technologies
+            li
+                font-size: 45px

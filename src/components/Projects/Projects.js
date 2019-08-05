@@ -30,7 +30,7 @@ class Projects extends Component{
                             return (
                                 <div key={index}>
                                     <Row className="project-row">
-                                        {   (index % 2)
+                                        {   (window.innerWidth > 600) && (window.innerHeight > 600) && (index % 2)
                                             ? <Col md={7}>
                                                 <Fade left duration={2000} distance="20%">
                                                     <PFCarousel images={this.state.projects[project].images}/>
@@ -38,11 +38,11 @@ class Projects extends Component{
                                               </Col>
                                             : null
                                         }
-                                        <Col md={4}>
+                                        <Col md={5} lg={4}>
                                             <Details data={this.state.projects[project].data}
                                                      techIcons={this.state.projects[project].techIcons}/>
                                         </Col>
-                                        {   !(index % 2)
+                                        {   (window.innerWidth <= 600) || (window.innerHeight <= 600) || !(index % 2)
                                             ? <Col md={7}>
                                                 <Fade right duration={2000} distance="20%">
                                                     <PFCarousel images={this.state.projects[project].images}/>

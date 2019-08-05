@@ -41,18 +41,26 @@
             .skill
                 padding-top: 1%
                 padding-bottom: 1.5%
+                li
+                    padding-left: 1%
 
     .skill-levels
         margin-bottom: 0
+        .row
+            padding-right: 15px
         ul
             margin: 0
             list-style: none
         li
             display: inline-block
 
-        .skill-level-row
+        .skill-level-col
+            padding-left: 15px
+            padding-right: 15px
             height: 10px
-            width: 90%
+            width: 80%
+        .skill-texts-col
+            width: 80%
 
         .skill-level
             border-bottom: 2px solid $skill-level-scale
@@ -62,9 +70,10 @@
             padding-right: 1%
         .skill-level-text
             font-size: 13px
+            text-align: right
             width: 25%
 
-@media screen and (max-width: 768px)
+@media screen and (max-width: 1030px)
     .skills
         .skill
             padding: 0
@@ -76,10 +85,13 @@
                 width: 100%
         .skill-icon
             display: none
-        .skill-levels
-            .skill-level-row
-                width: 100%
 
+        .skill-levels
+            .row
+                padding-right: 15px
+            .skill-level-col, .skill-texts-col
+                width: 100%
+                padding-left: 0
             .skill-level-text
                 font-size: 11px
 
@@ -96,6 +108,17 @@
                     border-top-right-radius: 3px
                     border-bottom-right-radius: 3px
                     font-size: 12px
+
+@media screen and (min-width: 2000px) and (min-height: 2000px)
+    .skills
+        .skill-bars
+            ul
+                li
+                    font-size: 50px
         .skill-levels
             .skill-level-text
-                font-size: 11px
+                font-size: 40px
+        .skill-bars
+            ul
+                img,svg
+                    width: 100px

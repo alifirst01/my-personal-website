@@ -17,10 +17,10 @@ class Details extends Component{
                 <Card className="project-details-card">
                     <Card.Title className="card-title">
                         <Row>
-                            <Col md={8}>
+                            <Col xs={6} md={8}>
                                 <h3 className="project-title">{this.props.data.title}</h3>
                             </Col>
-                            <Col md={4}>
+                            <Col xs={6} md={4}>
                                 <ul>
                                     <li><FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon" title="External"/></li>
                                     <li><FontAwesomeIcon icon={faGithub} className="link-icon" title="Github"/></li>

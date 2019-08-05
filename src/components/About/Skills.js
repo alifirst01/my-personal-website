@@ -52,10 +52,10 @@ class Skills extends Component{
                 }
                 <div>
                     <ul className="skill-levels">
-                        <Row className="skill-level-row">
-                            <Col md={1}>
+                        <Row>
+                            <Col xs={0} md={1}>
                             </Col>
-                            <Col md={11}>
+                            <Col xs={12} md={11} lg={10} className="skill-level-col">
                                 <li className="skill-level">&nbsp;</li>
                                 <li className="skill-level">&nbsp;</li>
                                 <li className="skill-level">&nbsp;</li>
@@ -65,13 +65,13 @@ class Skills extends Component{
                     </ul>
                     <ul className="skill-levels">
                         <Row>
-                            <Col md={1}>
+                            <Col xs={0} md={1}>
                             </Col>
-                            <Col md={11}>
-                                <li className="skill-level-text" style={{textAlign: "right"}}>Beginner</li>
-                                <li className="skill-level-text" style={{textAlign: "right"}}>Intermediate</li>
-                                <li className="skill-level-text" style={{textAlign: "center"}}>Advanced</li>
-                                <li className="skill-level-text" >Proficient</li>
+                            <Col xs={12} md={11} lg={10} className="skill-texts-col">
+                                <li className="skill-level-text">Beginner</li>
+                                <li className="skill-level-text">Intermediate</li>
+                                <li className="skill-level-text">Advanced</li>
+                                <li className="skill-level-text">Proficient</li>
                             </Col>
                         </Row>
                     </ul>
