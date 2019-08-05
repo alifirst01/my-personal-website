@@ -59,10 +59,10 @@ class Employment extends Component{
                 </div>
                 <div className="employment-content">
                     <Row>
-                        <Col md={4}>
+                        <Col md={4} xs={12}>
                             <Thumbnails employmentHistory={this.state.employmentHistory} switchEmploymentDetails={this.switchEmploymentDetails}/>
                         </Col>
-                        <Col md={8}>
+                        <Col md={8} xs={12}>
                             <Zoom left opposite when={this.state.show} duration={800}>
                                 <EmploymentDetails employmentHistory={this.state.employmentHistory}/>
                             </Zoom>

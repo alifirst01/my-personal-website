@@ -64,9 +64,75 @@
                 p
                     color: $employment-description
 
+@media screen and (max-width: 1030px)
+    #employment
+        min-height: auto
+        padding-top: 15%
+        .employment-content
+            margin-top: 5%
+            .employment-thumbnails
+                .employment-thumbnails-list
+                    padding-left: 0
+            .employment-list
+                .employment-details-list
+                    padding-left: 0
+                .company-logo
+                    width: 100%
 
+@media screen and (min-width: 768px) and (max-height: 500px)
+    #employment
+        height: auto
 
+@media screen and (max-width: 768px) and (max-height: 500px)
+    #employment
+        height: auto
+        padding-top: 25%
+        .employment-content
+            .employment-thumbnails
+                padding-top: 5%
+                .employment-thumbnails-list
+                    padding-left: 0
+                    margin: 0
+                    .employment-thumbnails-list-item
+                        border-left: 0
+                        border-top: 6px solid $employment-thumbs-border
+                        display: inline-block
+                        padding: 2% 4%
+                    .activeEmp
+                        border-top: 6px solid $employment-thumbs-border-active
 
+            .employment-list
+                margin-top: 5%
+                .employment-details-list
+                    padding-left: 0
+                    .employment-details-list-item
+                        width: 90%
+                .company-logo
+                    width: 20%
 
+@media screen and (max-width: 600px)
+    #employment
+        min-height: 90vh
+        padding-top: 25%
+        .employment-content
+            .employment-thumbnails
+                padding-top: 5%
+                .employment-thumbnails-list
+                    padding-left: 0
+                    margin: 0
+                    .employment-thumbnails-list-item
+                        border-left: 0
+                        border-top: 6px solid $employment-thumbs-border
+                        display: inline-block
+                        padding: 2% 4%
+                    .activeEmp
+                        border-top: 6px solid $employment-thumbs-border-active
 
-
+            .employment-list
+                margin-top: 5%
+                .employment-details-list
+                    padding-left: 0
+                    .employment-details-list-item
+                        width: 90%
+                .company-logo
+                    width: 20%

@@ -15,7 +15,7 @@ export default class EmploymentService{
             console.log("Error: Couldn't find file:", "../assets/images/icons/" + data.logo);
             logoFile = faBuilding;
         }
-        return new Employment(data.title, data.company, data.location, data.url, data.current, data.startDate,
+        return new Employment(data.title, data.company, data.companyAbbr, data.location, data.url, data.current, data.startDate,
             data.endDate, data.jobDuration, data.description, logoFile);
     }
 

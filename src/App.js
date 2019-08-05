@@ -42,6 +42,8 @@ class App extends Component {
                     [
                         <About key={"about"}/>,
                         <Projects key={"projects"}/>,
+                        <Employment key={"employment"}/>,
+                        <Contact key={"contact"}/>
                     ]
                 )}
             </div>
@@ -49,5 +51,5 @@ class App extends Component {
   }
 }
 {/*<Employment key={"employment"}/>,*/}
-{/*<Contact key={"contact"}/>*/}
+{/**/}
 export default App;

@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import {faSkype, faLinkedin, faDiscord} from "@fortawesome/fontawesome-free-brands";
+import {faSkype, faLinkedin, faDiscord, faGithub} from "@fortawesome/fontawesome-free-brands";
 import Fade from 'react-reveal/Fade';
 
 class Contact extends Component{
@@ -15,7 +15,8 @@ class Contact extends Component{
             email: "ali-asgher@uiowa.edu",
             linkedIn: "linkedin.com/in/alifirst/",
             skype: "razor0128",
-            discord: "alifirst#9510"
+            discord: "alifirst#9510",
+            github: "github.com/alifirst01"
         };
     }
 
@@ -27,7 +28,7 @@ class Contact extends Component{
                 </div>
                 <div className="contact-content">
                     <Row>
-                        <Col md={5}>
+                        <Col md={5} xs={12}>
                             <Fade>
                                 <Row>
                                     <img src={Photo} alt="Profile Photo"/>
@@ -39,7 +40,7 @@ class Contact extends Component{
                                 </Row>
                             </Fade>
                         </Col>
-                        <Col md={4}>
+                        <Col lg={5} md={7} xs={12}>
                             <Fade right cascade duration={2000}>
                                 <ul>
                                     <li>
@@ -51,6 +52,14 @@ class Contact extends Component{
                                         <FontAwesomeIcon icon={faLinkedin} className="contact-icon" style={{color: "#0077B5"}} title="LinkedIn"/>
                                         <span className="ctext">{this.state.linkedIn}</span>
                                     </li>
+                                    {(window.innerWidth <= 600) || (window.innerHeight <= 500)
+                                        ?
+                                            <li>
+                                                <FontAwesomeIcon icon={faGithub} className="contact-icon" style={{color: "black"}} title="Github"/>
+                                                <span className="ctext">{this.state.github}</span>
+                                            </li>
+                                        :   null
+                                    }
                                     <li>
                                         <FontAwesomeIcon icon={faSkype} className="contact-icon" style={{color: "#009efb"}} title="Skype"/>
                                         <span className="ctext">{this.state.skype}</span>

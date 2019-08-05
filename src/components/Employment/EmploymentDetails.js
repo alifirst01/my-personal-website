@@ -19,7 +19,7 @@ class EmploymentDetails extends Component{
                             return(
                                 <li key={index1} className="employment-details-list-item">
                                     <Row>
-                                        <Col md={2}>
+                                        <Col md={3} lg={2}>
                                             {(typeof this.props.employmentHistory[employment].logo == "string")
                                                 ? <img className="company-logo"
                                                        src={this.props.employmentHistory[employment].logo} alt=""/>
@@ -27,7 +27,7 @@ class EmploymentDetails extends Component{
                                                                    icon={this.props.employmentHistory[employment].logo}/>
                                             }
                                         </Col>
-                                        <Col md={10}>
+                                        <Col md={9} lg={10}>
                                             <h5>{this.props.employmentHistory[employment].data.title}</h5>
                                             <h6><a href={this.props.employmentHistory[employment].data.companyUrl}>{this.props.employmentHistory[employment].data.company}</a></h6>
                                             <p>
