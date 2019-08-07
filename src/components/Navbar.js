@@ -30,7 +30,7 @@ class PFNavbar extends Component{
             element.classList.remove("nav-active");
     };
 
-    handleClick = (e, tag) => {
+    handleClick = (tag) => (e) => {
         e.preventDefault();
         if(this.props.home === true){
             this.props.switchHome();
@@ -50,19 +50,19 @@ class PFNavbar extends Component{
                         <FontAwesomeIcon icon={faHome} />
                     </Button>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle className="navbar-toggle" aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-end">
                     <Nav id="nav-list">
-                        <Nav.Link className="link"><a href="#about" onClick={() => this.handleClick(event, "#about")}>About</a></Nav.Link>
-                        <Nav.Link className="link"><a href="#projects" onClick={() => this.handleClick(event, "#projects")}>Projects</a></Nav.Link>
-                        <Nav.Link className="link"><a href="#employment" onClick={() => this.handleClick(event, "#employment")}>Experience</a></Nav.Link>
-                        <Nav.Link className="link"><a href="#contact" onClick={() => this.handleClick(event, "#contact")}>Contact</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#about" onClick={this.handleClick("#about")}>About</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#projects" onClick={this.handleClick("#projects")}>Projects</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#employment" onClick={this.handleClick("#employment")}>Experience</a></Nav.Link>
+                        <Nav.Link className="link"><a href="#contact" onClick={this.handleClick("#contact")}>Contact</a></Nav.Link>
                         <Nav.Link href={this.state.resumeLink} target="_blank" className="resume-button"><a>Resume</a></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
+
         )
     }
 }
-
 export default PFNavbar;
