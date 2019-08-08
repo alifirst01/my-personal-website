@@ -22,8 +22,16 @@ class Details extends Component{
                             </Col>
                             <Col xs={6} md={4}>
                                 <ul>
-                                    <li><FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon" title="External"/></li>
-                                    <li><FontAwesomeIcon icon={faGithub} className="link-icon" title="Github"/></li>
+                                    <a href={this.props.data.externalLink} target="_blank">
+                                        <li>
+                                            <FontAwesomeIcon icon={faExternalLinkAlt} className="link-icon" title="External"/>
+                                        </li>
+                                    </a>
+                                    <a href={this.props.data.githubLink} target="_blank">
+                                        <li>
+                                            <FontAwesomeIcon icon={faGithub} className="link-icon" title="Github"/>
+                                        </li>
+                                    </a>
                                 </ul>
                             </Col>
                         </Row>

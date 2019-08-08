@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../../styles/themes/_employment.sass"
 import {Col, Row} from "react-bootstrap";
 import EmploymentService from "../../services/EmploymentService";
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 import Thumbnails from "./Thumbnails";
 import EmploymentDetails from "./EmploymentDetails";
 
@@ -63,9 +63,9 @@ class Employment extends Component{
                             <Thumbnails employmentHistory={this.state.employmentHistory} switchEmploymentDetails={this.switchEmploymentDetails}/>
                         </Col>
                         <Col md={8} xs={12}>
-                            <Zoom left opposite when={this.state.show} duration={800}>
+                            <Fade when={this.state.show} duration={400}>
                                 <EmploymentDetails employmentHistory={this.state.employmentHistory}/>
-                            </Zoom>
+                            </Fade>
                         </Col>
                     </Row>
                 </div>

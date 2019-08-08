@@ -1,0 +1,7 @@
+{
+  "title": "Course-Hub",
+  "github": "https://github.com/crypto-bonds/cryptobonds-web-server",
+  "external": "https://django-client.herokuapp.com/cryptoserver/",
+  "description": "CryptoBonds is a blockchain application that was built using Hyperledger Sawtooth",
+  "technologies": ["Django", "Docker", "HTML", "CSS", "Hyperledger Sawtooth"]
+}

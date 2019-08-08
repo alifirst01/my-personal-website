@@ -24,8 +24,7 @@ class Home extends Component{
                     <p>Hi, I am</p>
                     <h1>Ali Asgher</h1>
                     <h3>Software Developer</h3>
-                    <p className="description">specializes in building quality web applications with highly maintainable and testable code</p>
-
+                    <Fade duration={3000}><p className="description">specializes in developing, testing and maintaining high-quality web applications</p></Fade>
                     <div>
                         <Button id="explore-button" onClick={this.props.updateContent} variant="outline-success">
                             Explore more

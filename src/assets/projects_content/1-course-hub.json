@@ -3,5 +3,5 @@
   "github": "https://github.com/UIOWA5830SP19/SPP200",
   "external": "https://course-hub.com",
   "description": "Course-Hub is a Website for Searching and Comparing Online Courses from multiple education portals. Course-Hub will allow users to view online courses from different education portals and sort and filter them based on user-rating, price, availability.\n\nIt will also have a functionality to recommend \"Paths\" for a \"Micro-Degree\" by combining courses",
-  "technologies": ["JavaScript", "ReactJs", "NodeJs", "Jest", "Google Firebase", "Amazon Elastic Search", "HTML", "CSS"]
+  "technologies": ["JavaScript", "ReactJs", "NodeJs", "Jest", "Docker", "Google Firebase", "Amazon Elastic Search", "HTML", "CSS"]
 }
