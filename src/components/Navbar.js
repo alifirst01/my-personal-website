@@ -9,7 +9,7 @@ class PFNavbar extends Component{
     constructor(props, context) {
         super(props, context);
         this.state = {
-            resumeLink: "https://drive.google.com/file/d/1SU-LTjz8nFSGM67k0bOW3oMYkVdUSiQD/view?usp=sharing"
+            resumeLink: "https://drive.google.com/file/d/1dYtVMywBMrPDzrJLkGYCs0oO_0isQDYQ/view?usp=sharing"
         };
     }
 
