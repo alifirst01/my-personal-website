@@ -1,7 +1,7 @@
 {
-  "title": "Git Trending",
-  "github": "https://github.com/foundersclubsoftware/Ali-WebTraining/tree/new-master/part3/web-training-project",
+  "title": "Github Vue App",
+  "github": "https://github.com/alifirst01/github-vue-app",
   "external": "https://git-trends.firebaseapp.com/",
-  "description": "Course-Hub is a Website for Searching Course-Hub is a Website for Searching Course-Hub is a Website for Searching Course-Hub is a Website for Searching Course-Hub is a Website for Searching and Comparing Online Courses from multiple education portals. Course-Hub will allow users to view online courses from different education portals and sort and filter them based on user-rating, price, availability.\n\nIt will also have a functionality to recommend \"Paths\" for a \"Micro-Degree\" by combining courses",
-  "technologies": ["JavaScript", "ReactJs", "NodeJs", "Jest", "Google Firebase", "Amazon Elastic Search", "HTML", "CSS"]
+  "description": "Github Vue App leverages github public API to display a list of trending repositories on Github based on custom search query parameters. It also features Github login feature which allows users to login to their account using Github OAuth service and view the list of issues assigned to them on their public repositories.",
+  "technologies": ["TypeScript", "VueJs", "Jest", "Sinon", "PugJs", "SASS", "TravisCI", "Google Firebase"]
 }

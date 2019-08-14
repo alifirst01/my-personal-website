@@ -1,7 +1,7 @@
 {
-  "title": "Course-Hub",
+  "title": "Cryptobonds",
   "github": "https://github.com/crypto-bonds/cryptobonds-web-server",
   "external": "https://django-client.herokuapp.com/cryptoserver/",
-  "description": "CryptoBonds is a blockchain application that was built using Hyperledger Sawtooth",
-  "technologies": ["Django", "Docker", "HTML", "CSS", "Hyperledger Sawtooth"]
+  "description": "CryptoBonds is a blockchain application designed to build stablecoin - a cryptocurrency with low volatility having its value tied to corporate bonds. The application has a web interface designed to allow efficient bond trading between company, traders and banks and an underlying blockchain to handle bonds' transactions and maintain ownership.",
+  "technologies": ["Python", "Django", "Docker", "HTML", "CSS", "Hyperledger Sawtooth"]
 }
