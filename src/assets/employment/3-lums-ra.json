@@ -12,6 +12,7 @@
   "description": {
     "Analyzed large data consisting of 30,000 football matches records using Python pandas and SQL and measured the impact of on-field proximity and fouls on players’ performances.":  [],
     "Implemented audio and frame classifier using TensorFlow framework to flag fake cartoon videos.": [],
-    "Built an Ad Spam detector for Olx e-commerce to detect modified reposts of same ads.": []
+    "Developed an Ad Spam detector using affinity clustering algorithm to detect spam ads on OLX e-commerce website.": [],
+    "Collaborated with senior research assistants on a variety of tasks and met objectives for simultaneous projects.": []
   }
 }
