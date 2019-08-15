@@ -1,7 +1,7 @@
 {
   "title": "Course-Hub",
   "github": "https://github.com/UIOWA5830SP19/SPP200",
-  "external": "https://course-hub.com",
+  "external": "https://course-hub-103f8.firebaseapp.com/",
   "description": "Course-Hub is a comprehensive platform for searching and comparing courses from various online education portals. It supports sorting and filtering courses based on user-rating, availability and price along with user posted deals and microdegree recommendation features.",
   "technologies": ["JavaScript", "ReactJs", "NodeJs", "Jest", "Docker", "Google Firebase", "Amazon Elastic Search", "HTML", "CSS"]
 }
