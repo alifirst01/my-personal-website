@@ -48,13 +48,21 @@ http://ali-asgher.com
   To add a new component, create a react component js file and refer it inside [App.js](https://github.com/alifirst01/my-personal-website/blob/master/src/App.js) component.
   
 ### Content
-#### Home
-#### Sidebar
-#### About
 #### Skills
+  - To modify the skills displayed in about section, go to [skills](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/skills) directory under src/assets directory and create a new json file with name value pairs specifying different skills. The name of the file will show up as the heading in about section and all skills specified inside that file will be listed under the heading. The proficiency level of a skill is determined by its value - ranging from 0 to 100.
+  - In order to change the image displayed alongside each skill, go to the [Skills icons](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/images/skills-icons) under src/assets/images directory and create a .png file of that skill. The name of the .png file should be the exact same as the skillname in order for it to get displayed alongside that skill.
 #### Projects
+  - To change the content of projects or add new projects to your website, go to [Projects Content](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/projects_content) folder and create/modify json file for each individual project. Each project file should have a title, external link, github link, description and list of technologies used. 
+  - The technologies used in different projects are displayed as images below the project description therefore for each technology listed in the project's file, create a corresponding .png file inside [icons](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/images/icons) directory.
+  - The slideshow images belonging to a project should be placed under src/assets/images/projects/name-of-project directory. The order of images in the slider is determined by the filenames (e.g. 1.png, 2.png, 3.png).
+  - The order of projects on the webpage is determined by the number specified in their filenames inside [Projects Content](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/projects_content) directory.
 #### Employment
-#### Contact
+ - To add/change employment history, add or modify json files inside [employment](https://github.com/alifirst01/my-personal-website/blob/master/src/assets/employment) directory. Each employment file should have a title, company, companyAbbr(to display on small screens), location, logo(name of image file placed under [companies logos](https://github.com/alifirst01/my-personal-website/tree/master/src/assets/images/companies-logos) directory), url, current, startDate, endDate, jobDuration, description.
+  - The description of job contains a list of key value pairs inorder to support sublists. Each key value pair represents a task performed on the job with the main task as key string and value as an array of subtasks.
+  - The order of employment history is determined by filename inside [employment](https://github.com/alifirst01/my-personal-website/blob/master/src/assets/employment) directory.
+  
+#### Home, About, Navbar, Sidebar & Contact
+ - To change the content of Home, About, Navbar, Sidebar & Contact, go to their respective component file inside src/components and modify the texts and links. 
 
 ### Application Theme
 #### Variables
