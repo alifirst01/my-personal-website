@@ -25,13 +25,20 @@ http://ali-asgher.com
   Builds the app for production to the build folder. Deploy the build folder on a hosting platform with a public url.
 
 
-## Technologies used
+## Technologies
 ### Language
-  - Javascript(ES6) compiled via [Babel](https://babeljs.io/), bundled using [Webpack](https://webpack.js.org/).
+  - Javascript(ES6)
   - [Sass](https://sass-lang.com/) - an extension of CSS for writing organized CSS and creating variables.
 ### Framework
   - [ReactJs](https://reactjs.org/) - Javascript frontend framework for creating interactive UIs.
 ### Libraries
+  - [browserify](http://browserify.org/) - to support NodeJS 'require' functionality inside client's browser and modularise the code into files.
+  - [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel) - An easily customizable carousel component for React apps.
+  - [React Reveal](https://www.npmjs.com/package/react-reveal) - To add various cool reveal on scroll animations in the application.
+  - [React Font Awsome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) - to use icons in the app
+  - [React Bootstrap](https://react-bootstrap.github.io/) - to use bootstrap components inside react.
+  - [Babel](https://babeljs.io/) - for transcompiling to ES6 code into a backwards compatible version of JavaScript in current and older browsers.
+  - [Webpack](https://webpack.js.org/) for bundling the assets and code splitting.
   
 
 ## Customization
