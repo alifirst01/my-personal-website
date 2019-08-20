@@ -35,7 +35,7 @@ http://ali-asgher.com
   - [browserify](http://browserify.org/) - to support NodeJS 'require' functionality inside client's browser and modularise the code into files.
   - [React Responsive Carousel](https://www.npmjs.com/package/react-responsive-carousel) - An easily customizable carousel component for React apps.
   - [React Reveal](https://www.npmjs.com/package/react-reveal) - To add various cool reveal on scroll animations in the application.
-  - [React Font Awsome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) - to use icons in the app
+  - [React Font Awsome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) - to use various icons in the application.
   - [React Bootstrap](https://react-bootstrap.github.io/) - to use bootstrap components inside react.
   - [Babel](https://babeljs.io/) - for transcompiling to ES6 code into a backwards compatible version of JavaScript in current and older browsers.
   - [Webpack](https://webpack.js.org/) for bundling the assets and code splitting.
@@ -73,6 +73,14 @@ http://ali-asgher.com
 
 ### Application Theme
 #### Variables
-#### Animations
+The [variables](https://github.com/alifirst01/my-personal-website/blob/master/src/styles/globals/_variables.sass) sass file under src/styles/globals directory contains all variables controlling the theme of application. You can modify the rgb values there to change the color scheme of different components in the application.
 #### Tags
+The [html_tags](https://github.com/alifirst01/my-personal-website/blob/master/src/styles/globals/_htmltags.sass) sass file defines the default css for html basic elements like h1, h2, p tags etc. Modify the default color, font-size of these elements inside that file. 
 #### Components CSS
+All the custom css for different components of the applications are put inside [styles/themes](https://github.com/alifirst01/my-personal-website/tree/master/src/styles/themes) directory. 
+
+## Contribute
+This repository is not open for editing right now. If you wish to make edits, by all means, fork the repo and make your edits in your own copy of the repo.
+
+## License
+Copyright © 2019 Ali Asgher. Project source code is licensed under the MIT license.
