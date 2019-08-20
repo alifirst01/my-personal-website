@@ -80,7 +80,7 @@ The [html_tags](https://github.com/alifirst01/my-personal-website/blob/master/sr
 All the custom css for different components of the applications are put inside [styles/themes](https://github.com/alifirst01/my-personal-website/tree/master/src/styles/themes) directory. 
 
 ## Contribute
-This repository is not open for editing right now. If you wish to make edits, by all means, fork the repo and make your edits in your own copy of the repo.
+This repository is not open for editing right now. If you wish to make edits, by all means, fork the repo and make your edits in your own copy of the repo. 
 
 ## License
-Copyright © 2019 Ali Asgher. Project source code is licensed under the MIT license.
+Copyright © 2019 Ali Asgher. Project source code is licensed under the MIT license. If you fork this repository for your own personal project, please give proper credit by linking back to my website, http://ali-asgher.com. DO NOT use for the purpose of business or claim this work as your own.
