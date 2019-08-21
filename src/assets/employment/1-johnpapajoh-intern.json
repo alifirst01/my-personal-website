@@ -14,7 +14,6 @@
     "Implemented full flow of GitHub OAuth service to support login through GitHub and access issues on user’s account.": [],
     "Improved code testability by implementing dependency injection through JavaScript inversion of control container.": [],
     "Wrote test cases for unit, integration and UI testing and maintained >90% unit test coverage.": [],
-    "Configured Travis continuous integration for automated testing and firebase deployment.": [],
-    "Went through an intensive training program learning VueJs, typescript and testing under the mentorship of senior developer.": []
+    "Configured Travis continuous integration for automated testing and firebase deployment.": []
   }
 }
