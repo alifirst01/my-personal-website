@@ -19,7 +19,7 @@ class About extends Component{
                                 <h1>About</h1>
                             </div>
                             <p>
-                                Hello! I'm Ali, a software engineer with a strong passion to built applications for the web. I develop high-quality applications which provide seamless user experience and write code that is easily maintainable and testable.
+                                Hello! I'm Ali, a software engineer with a strong passion to build applications for the web. I develop high-quality applications which provide seamless user experience and write code that is easily maintainable and testable.
                                 <br />
                                 <br />
                                 Currently pursuing a MS in Computer Science at &lt;<a href="https://uiowa.edu/" target="_blank">University of Iowa</a>&gt;, I have a strong interest in building and optimizing user-centric, high-impact websites. I also enjoy working on algorithmic problems and leverage problem solving skills to optimize existing solutions.
