@@ -10,9 +10,11 @@
   "endDate": "Aug 2019",
   "jobDuration": "3 mos",
   "description": {
-    "Worked on VueJs web application and API development under the mentorship of senior software developer.": [],
-    "Implemented complete flow of OAuth using Github API service for accessing user’s Github issues and repositories.": [],
-    "Leveraged dependency injection to improve code testability and wrote test cases for unit, integration and UI testing.": [],
-    "Configured Travis continuous integration for automated testing and firebase deployment.": []
+    "Developed VueJs application component by leveraging GitHub API to search and filter public repositories on GitHub.": [],
+    "Implemented full flow of GitHub OAuth service to support login through GitHub and access issues on user’s account.": [],
+    "Improved code testability by implementing dependency injection through JavaScript inversion of control container.": [],
+    "Wrote test cases for unit, integration and UI testing and maintained >90% unit test coverage.": [],
+    "Configured Travis continuous integration for automated testing and firebase deployment.": [],
+    "Went through an intensive training program learning VueJs, typescript and testing under the mentorship of senior developer.": []
   }
 }

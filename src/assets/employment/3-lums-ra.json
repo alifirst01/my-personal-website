@@ -10,7 +10,7 @@
   "endDate": "May 2018",
   "jobDuration": "1 yr 10 mos",
   "description": {
-    "Analyzed large data consisting of 30,000 football matches records using Python pandas and SQL and measured the impact of on-field proximity and fouls on players’ performances.":  [],
+    "Performed statistical analysis on a large database of 30,000 football matches records in order to compare performances of forward and backward playing players’ using different metrics.":  [],
     "Implemented audio and frame classifier using TensorFlow framework to flag fake cartoon videos.": [],
     "Developed an Ad Spam detector using affinity clustering algorithm to detect spam ads on OLX e-commerce website.": [],
     "Collaborated with senior research assistants on a variety of tasks and met objectives for simultaneous projects.": []
